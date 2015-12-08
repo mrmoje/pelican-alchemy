@@ -5,13 +5,9 @@
         <a class="nodec" href="{{ SITEURL }}"><img src={{ PROFILE_IMAGE }}></a>
       </div>
     {% endif %}
-    <div class="header-inner row">
-      <h1 class="header-name col-md-2" id="sitename">
-        <a class="nodec" href="{{ SITEURL }}">{{ SITENAME }}</a>
-      </h1>
-
+    <div class="header-inner">
       <!-- <h3 class="header-text">{{ SITE_SUBTEXT }}</h3> -->
-      <ul class="header-menu list-inline text-right col-md-10">
+      <ul class="header-menu list-inline text-right">
         {% for title, link in MENU_ITEMS %}
         <li><a class="nodec" href="{{ link }}" target="_blank">{{ title }}</a></li>
         {% endfor %}
@@ -48,10 +44,13 @@
 
         {% if SOCIAL %}
         {% for name, link in SOCIAL %}
-        <li><a class="nodec icon-{{ name|lower|replace('+','-plus') }}" href="{{ link }}" target="_blank"></a></li>
+        <li><a class="nodec social-link icon-{{ name|lower|replace('+','-plus') }}" href="{{ link }}" target="_blank"></a></li>
         {% endfor %}
         {% endif %}
       </ul>
+      <h1 class="header-name">
+        <a id="sitename" class="nodec" href="{{ SITEURL }}">{{ SITENAME }}</a>
+      </h1>
     </div>
   </div>
 
