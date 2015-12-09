@@ -26,13 +26,6 @@
         <li><a class="nodec" href="{{ SITEURL }}/categories.html">Categories</a></li>
         <li class="muted">|</li>
         {% endif %}
-        {% if DISPLAY_CATEGORIES_ON_MENU %}
-            {% for cat, null in categories %}
-                <li {% if cat == category %}class="active"{% endif %}>
-                    <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
-                </li>
-            {% endfor %}
-        {% endif %}
         {% if TAGS_ON_MENU %}
         <li><a class="nodec" href="{{ SITEURL }}/tags.html">Tags</a></li>
         <li class="muted">|</li>
