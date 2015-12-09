@@ -6,6 +6,7 @@
 
 {% block content %}
   <h1>Authors on {{ SITENAME }}</h1>
+  <hr>
   <ul class="list-unstyled">
     {% for author, articles in authors|sort %}
       <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
