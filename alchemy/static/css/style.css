@@ -1584,6 +1584,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+body > .container > hr,
+.full-post > hr {
+  border: 0;
+  border-top: 1px solid #bbb;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -7354,10 +7359,6 @@ a:hover {
   margin-top: 30px;
   padding: 30px 0;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-.full-post > .post-title {
-  border-bottom: 1px solid;
-  padding-bottom: 10px;
 }
 .full-post > .post-title > a {
   color: black;
