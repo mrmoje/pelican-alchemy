@@ -13,9 +13,6 @@
         {% endfor %}
         {% if PAGES_ON_MENU %}
         {% for p in PAGES %}
-            {% if loop.first %}
-            <li class="muted">|</li>
-            {% endif %}
             <li><a class="nodec" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% if loop.last %}
             <li class="muted">|</li>
