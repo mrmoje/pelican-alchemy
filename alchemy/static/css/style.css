@@ -7409,3 +7409,6 @@ a:hover {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+*:target {
+    background: yellow;
+}
